@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Carousel</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      /* css 없음 */
+    </style>
+  </head>
+<!-- id=data-bs-target="#myCaro" 바꾸기-->
+  <body>
+    <div id="myCaro" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+      <!-- 인디케이터 -->
+    
+      <div class="carousel-indicators">
+        <button type="button" 
+                data-bs-target="#myCaro" 
+                data-bs-slide-to="0" 
+                class="active" 
+                aria-current="true" 
+                aria-label="Slide 1">
+              </button>
+        <button type="button" 
+                data-bs-target="#myCaro" 
+                data-bs-slide-to="1" 
+                aria-label="Slide 2">
+            </button>
+        <button type="button" 
+                data-bs-target="#myCaro" 
+                data-bs-slide-to="2" 
+                aria-label="Slide 3">
+              </button>
+      </div>
+      <!-- 슬라이드만 -->
+      <div class="carousel-inner" style="height: 100vh">
+        <!-- 0.5초 : data-bs-interval="500" -->
+        <!-- 이미지 사이즈가 항상 같아야함 -->
+          <div class="carousel-item active" data-bs-interval="500">
+            <img src="img/slide1.jpg" alt="" class="img-fluid" />
+            <div class="carousel-caption">
+              <h4>First Slide Caption</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="500">
+            <img src="img/slide2.jpg" alt="" class="img-fluid" />
+            <div class="carousel-caption">
+              <h4>Second Slide Caption</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="500">
+            <img src="img/slide3.jpg" alt="" class="img-fluid" />
+            <div class="carousel-caption">
+              <h4>Third Slide Caption</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+        
+        <button
+          class="carousel-control-prev"
+          data-bs-target="#myCaro"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          data-bs-target="#myCaro"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <!-- 좌우 컨트롤 버튼 -->
+      <button class="carousel-control-prev" 
+              type="button" 
+              data-bs-target="#myCaro" 
+              data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" 
+              aria-hidden="true"></span>
+        <span class="visually-hidden">이전 Previous</span>
+      </button>
+      <button class="carousel-control-next" 
+              type="button" 
+              data-bs-target="#myCaro" 
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon" 
+              aria-hidden="true"></span>
+        <span class="visually-hidden">다음 Next</span>
+      </button>
+    </div>
+<!-- 자바스크립트 - 동작O -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

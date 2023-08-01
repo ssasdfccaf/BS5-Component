@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>네비게이션 바 Navbar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      body {
+        padding: 3rem;
+      }
+    </style>
+  </head>
+  <!-- 네브바 : 상단에 메뉴 삽입 -->
+  <body>
+    <!-- NAVBAR
+    navbar-expand-sm 스몰사이즈에서 바뀜
+    navbar-expand-md 
+    navbar-dark 검은색
+    bg-success 초록색
+  -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+              제목 Navbar
+            
+          </a>
+                 <button 
+                  class="navbar-toggler" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#navBar"
+                   >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"  
+                id="navBar">
+                <!-- 메뉴부분 
+                mx-auto
+                me-auto 오른쪽으로 메뉴 이동-->
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a href="#" class="nav-link active"> 홈페이지 Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link"> 어바웃 About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link"> 연락처 Contact</a>
+                </li>
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> 드롭다운버튼 Blog</a>
+                      <ul class="dropdown-menu">
+                          <li>
+                              <a href="#" class="dropdown-item"> 아이템1  Dropdown item</a>
+                          </li>
+                          <li>
+                              <a href="#" class="dropdown-item"> 아이템2  Dropdown item</a>
+                          </li>
+                          <li>
+                              <a href="#" class="dropdown-item"> 아이템3  Dropdown item</a>
+                          </li>
+                          <li>
+                              <a href="#" class="dropdown-item"> 아이템4  Dropdown item</a>
+                          </li>
+                      </ul>
+                  </li>
+                  
+              </ul>
+              <!-- 검색 서치바부분 -->
+              <form action="" class="d-flex">
+                  <input type="text" class="form-control me-2">
+                  <button class="btn btn-outline-light">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+
+
+
+  </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

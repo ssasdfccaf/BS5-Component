@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>cards</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .card {
+        /* width: 400px; */
+      }
+    </style>
+  </head>
+
+  <!-- 컴포넌트 : 한 가지 기능의 모듈 -->
+  <body>
+    <div class="container py-5">
+      <!-- 이미지가 위에 있을 때 CARDS TOP IMAGE-->
+
+      <div class="card mb-5">
+        <div class="card-body">
+          <h5 class="card-title">카드 제목 Card Title</h5>
+          <p class="card-text">카드 내용 입니다.</p>
+          <img src="img/slide1.jpg" alt="" class="card-img-top" />
+        </div>
+      </div>
+
+      <!-- 이미지가 아래에 있을 때 CARDS BOTTOM IMAGE-->
+
+      <div class="card mb-5">
+        <div class="card-body">
+          <h5 class="card-title">카드 제목 Card Title</h5>
+          <p class="card-text">카드 내용 입니다.</p>
+        </div>
+        <img src="img/slide1.jpg" alt="" class="card-img-bottom" />
+      </div>
+
+      <!-- 카드 오버레이 CARDS OVERLAY IMAGE : 이미지와 내용 겹침-->
+
+      <div class="card text-white mb-5">
+        <img src="img/slide3.jpg" alt="" class="card-img" />
+        <div class="card-img-overlay">
+          <!-- 오버레이 글자 안에 제목과 내용 -->
+          <h5 class="card-title">카드 제목 Card Title</h5>
+          <p class="card-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
+            saepe ducimus mollitia magni pariatur enim nemo harum voluptate
+            dicta quaerat.
+          </p>
+        </div>
+      </div>
+
+      <!-- 카드 링크 CARD LINK -->
+
+      <div class="card mb-5">
+        <img src="img/slide1.jpg" alt="" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Card Title</h5>
+          <p class="card-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
+            saepe ducimus mollitia magni pariatur enim nemo harum voluptate
+            dicta quaerat.
+          </p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Card link</a>
+          <ui class="list-group list-group-flush">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">second item</li>
+            <li class="list-group-item">third item</li>
+          </ui>
+        </div>
+      </div>
+
+      <!-- 카드 헤더와 푸터 CARD HEADER AND FOOTER -->
+
+      <div class="card mb-5">
+        <div class="card-header">Card Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            rerum asperiores impedit labore iusto optio distinctio autem,
+            doloremque sint maiores!
+          </p>
+        </div>
+        <div class="card-footer">This is a card footer</div>
+      </div>
+
+      <!-- 배경색 입력시 CARD DANGER -->
+
+      <div class="card bg-danger text-white">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            rerum asperiores impedit labore iusto optio distinctio autem,
+            doloremque sint maiores!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
