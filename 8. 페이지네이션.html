@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>pagination</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style></style>
+  </head>
+  <!-- 페이지네이션 : 각 페이지 표시 -->
+  <body>
+    <div class="container py-5">
+      <!-- NORMAL PAGINATION -->
+
+      <nav>
+        <ul class="pagination">
+          <!-- 이전페이지 disabled는 링크 기능 없앰 -->
+          <li class="page-item disabled">
+            <a href="#" class="page-link">이전 Previous</a>
+          </li>
+          <!-- 실제 페이지 번호 
+          현재페이지(active):파란색-->
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">4</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">5</a>
+          </li>
+          <!-- 다음페이지 -->
+          <li class="page-item">
+            <a href="#" class="page-link">다음 Next</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- LARGE PAGINATION -->
+
+      <nav>
+        <ul class="pagination pagination-lg">
+          <li class="page-item disabled">
+            <a href="#" class="page-link">◀</a>
+          </li>
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">▶</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- SMALL PAGINATION 
+      laquo <<
+      raquo <<-->
+
+      <nav>
+        <ul class="pagination pagination-sm">
+          <li class="page-item disabled">
+            <a href="#" class="page-link">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
